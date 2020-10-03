@@ -16,7 +16,7 @@ public class TestCoroutines : MonoBehaviour
             if (currentCoroutine != null) {
                 StopCoroutine(currentCoroutine);
             }
-
+            Debug.Log("Hello");
             currentCoroutine = Move(Random.onUnitSphere * 5, 10);
             StartCoroutine(currentCoroutine);
         }
